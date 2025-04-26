@@ -364,6 +364,18 @@ This demonstrates that with access to a **stronger text-to-image model**, the AI
 
 
 
+## 🚀 Suggestions for Future Improvements
+
+1. **Fine-tune Stable Diffusion or Other Open-Source Models with Culturally-Aware Datasets:**  
+   Enhance the system’s relevance and inclusivity by fine-tuning models on datasets that reflect diverse cultural contexts and aesthetics.
+
+2. **Integrate Advanced Models into the AI Pipeline:**  
+   Improve the quality and realism of the generated images by incorporating more sophisticated and state-of-the-art generative models.
+
+3. **Develop a Production-Ready AI Pipeline:**  
+   Refactor the current architecture into a modular, scalable structure, deploy the solution on a cloud platform, and expose functionality through robust APIs to enable easier integration and scalability.
+
+
 **How to Run the Project**
 1. **Run the Notebook**
    - Open `SDX1_(2) (1).ipynb` in Colab, Jupyter Notebook, or locally.
