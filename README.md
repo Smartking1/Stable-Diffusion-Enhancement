@@ -315,6 +315,7 @@ Facilitates **debugging**, **monitoring**, and **operational transparency**.
 ##Sample of generated image
 
 Prompt: Yoruba man in Agbada
+
 Enhanced Prompt:A dignified Yoruba man in a majestic Agbada attire, standing against a warm, golden-lit backdrop of traditional West African patterns, with intricate brocade and embroidery adorning his fabric, worn over a crisp white shirt and matching trousers, with a subtle smile and a sense of pride, in high resolution
 
 
@@ -323,7 +324,9 @@ Enhanced Prompt:A dignified Yoruba man in a majestic Agbada attire, standing aga
 
 ## Limitations
 
----
+Some of the advanced open source text to image models require a higher GPU to run on colab. The free tier T4 GPU provided by colab is not sufficient to handle the models.
+
+## Testing the Enhanced Prompts from the AI Pipeline with advanced stable diffusion models using huggingface Inference interface yielded great result, showing that with a better text to image model the AI Pipeline will generate better results.
 
 # 📂 Project Structure
 
