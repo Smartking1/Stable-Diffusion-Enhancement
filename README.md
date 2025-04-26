@@ -314,9 +314,12 @@ Facilitates **debugging**, **monitoring**, and **operational transparency**.
 
 ##Sample of generated image
 
-Prompt: Yoruba couple dancing
-Enhanced Prompt: Yoruba couple dancing in a vibrant West African marketplace, surrounded by colorful textiles, intricate wood carvings, and the warm glow of lanterns, with the woman's Adire-dyed wrapper flowing gracefully as they move in harmony, amidst a backdrop of bustling activity and lively drumbeat
-![Compvis](https://github.com/user-attachments/assets/9b2e3775-6327-4b38-ab79-def56bd1efb6)
+Prompt: Yoruba man in Agbada
+Enhanced Prompt:A dignified Yoruba man in a majestic Agbada attire, standing against a warm, golden-lit backdrop of traditional West African patterns, with intricate brocade and embroidery adorning his fabric, worn over a crisp white shirt and matching trousers, with a subtle smile and a sense of pride, in high resolution
+
+
+![compvis2](https://github.com/user-attachments/assets/918eec3f-91c8-4ba6-a9b6-bdb56c558601)
+
 
 ## Limitations
 
