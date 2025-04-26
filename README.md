@@ -312,9 +312,13 @@ The system initializes a **formal logging system** that:
 ✅ **Why Important?**  
 Facilitates **debugging**, **monitoring**, and **operational transparency**.
 
+##Sample of generated image
 
+Prompt: Yoruba couple dancing
+Enhanced Prompt: Yoruba couple dancing in a vibrant West African marketplace, surrounded by colorful textiles, intricate wood carvings, and the warm glow of lanterns, with the woman's Adire-dyed wrapper flowing gracefully as they move in harmony, amidst a backdrop of bustling activity and lively drumbeat
+![Compvis](https://github.com/user-attachments/assets/9b2e3775-6327-4b38-ab79-def56bd1efb6)
 
-
+## Limitations
 
 ---
 
