@@ -308,7 +308,7 @@ The system initializes a **formal logging system** that:
 ✅ **Why Important?**  
 Facilitates **debugging**, **monitoring**, and **operational transparency**.
 
-##Sample of generated image
+## Sample of generated image
 
 Prompt: Yoruba man in Agbada
 
