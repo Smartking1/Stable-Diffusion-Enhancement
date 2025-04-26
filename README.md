@@ -35,6 +35,7 @@ The system accepts a **culturally specific user prompt** (e.g., "Yoruba man in a
 | SQLite3 | Lightweight database for metadata |
 | Python `logging` | File and console logging |
 | Google Colab  | environment |
+| Gradio  | Chat Interface |
 
 ---
 
@@ -321,6 +322,20 @@ Enhanced Prompt:A dignified Yoruba man in a majestic Agbada attire, standing aga
 
 ![compvis2](https://github.com/user-attachments/assets/918eec3f-91c8-4ba6-a9b6-bdb56c558601)
 
+##  User chat Interface with Gradio
+
+**How the Gradio Interface Works**
+
+The Gradio interface provides an interactive and user-friendly web application that connects the user directly with the system’s core functionalities. It is designed around a clean layout with multiple tabs, including **Generate**, **Analyze**, and **Search**, each offering specific capabilities.
+
+- In the **Generate** tab, users can input a text prompt. The system then processes the prompt to create AI-generated images based on the input description.
+- The **Analyze** tab allows users to submit a prompt for deeper analysis. The app provides insights into the prompt's structure and can automatically enhance it to improve image generation results.
+- The **Search** tab enables users to search previously generated images based on keywords, making it easy to find and reuse past creations.
+
+Each user action (like submitting a prompt or clicking a button) triggers backend functions that handle processing, AI inference, and database retrieval. Gradio’s components — such as text boxes, buttons, and image displays — make the entire workflow seamless, requiring no technical background from the user.
+
+![image](https://github.com/user-attachments/assets/551239bf-ecaf-45f2-8992-400fc912e51c)
+
 
 
 ## Limitations
@@ -349,28 +364,10 @@ This demonstrates that with access to a **stronger text-to-image model**, the AI
 
 
 
-# 📂 Project Structure
-
----
-
-# 🚀 How to Run the Project
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/culturally-aware-image-generator.git
-   cd culturally-aware-image-generator
-   ```
-
-2. **Install Required Libraries**
-   ```bash
-   pip install diffusers transformers accelerate ctransformers scipy safetensors
-   ``
-4. **Run the Notebook**
+**How to Run the Project**
+1. **Run the Notebook**
    - Open `SDX1_(2) (1).ipynb` in Colab, Jupyter Notebook, or locally.
    - Follow the flow to generate your culturally enriched images.
-
-
----
 
 # 🧠 Key Takeaways
 
@@ -391,4 +388,5 @@ this project showcases **true end-to-end AI engineering** focused on **diversity
 | SQLite Relational Database | ✅ |
 | Full Logging System | ✅ |
 | Modular Code Structure | ✅ |
+| User Chat Interface | ✅ |
 | Documentation | ✅ |
