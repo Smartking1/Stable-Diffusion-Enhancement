@@ -31,10 +31,10 @@ The system accepts a **culturally specific user prompt** (e.g., "Yoruba man in a
 |:------------|:---------|
 | Python 3.10+ | Core programming language |
 | Hugging Face `diffusers` | Stable Diffusion model loading |
-| `ctransformers` | Local Llama-2 model loading |
+| `Groq API` | Llama Model |
 | SQLite3 | Lightweight database for metadata |
 | Python `logging` | File and console logging |
-| Google Colab / Local | Run environment |
+| Google Colab  | environment |
 
 ---
 
