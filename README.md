@@ -65,6 +65,76 @@ The **Prompt Analyzer** module parses the input and **identifies key cultural co
 | Objects | (if mentioned) |
 
 This breakdown gives structure and understanding to the raw prompt.
+The PromptAnalyzer class is designed to analyze a text prompt and automatically extract key details like cultural elements, general categories, subjects, colors, styles, and time of day.
+It helps in understanding the context, setting, and characteristics described in any given text prompt — especially those rich in African cultural references.
+
+🔹 Initialization
+When an instance of PromptAnalyzer is created, it sets up:
+
+Cultural Keywords:
+A dictionary containing specific African cultural references (e.g., ethnic groups like Yoruba, Igbo, Maasai, traditional clothing like agbada, kente, etc.), linked to their corresponding attributes (like region, type, etc.).
+
+General Categories:
+A dictionary that maps broad themes (e.g., portrait, landscape, urban, wildlife) to related keywords.
+
+Color Patterns:
+A list of common color-related words (e.g., red, blue, vibrant, pastel) to detect color themes in the prompt.
+
+Style Patterns:
+A list of popular artistic styles (e.g., realistic, cartoon, oil painting, cinematic) that might be mentioned in the prompt.
+
+🔹 Method: analyze(prompt)
+Takes a text prompt as input and returns a context dictionary summarizing the extracted information.
+
+It performs the following steps:
+
+Preprocessing:
+
+Converts the prompt to lowercase for case-insensitive matching.
+
+Splits the text into words.
+
+Cultural Element Detection:
+
+Scans for cultural keywords and records matching ethnic groups, clothing, settings, etc.
+
+Flags the prompt as is_cultural = True if any cultural element is found.
+
+General Category Identification:
+
+Looks for general categories like portrait, landscape, urban, etc.
+
+Uses fallback heuristics:
+
+If "man", "woman", etc. are found → assume portrait.
+
+If nothing matches → default to landscape.
+
+Subject Extraction:
+
+Identifies subjects like "man", "child", "elder", and adds them to the subjects list.
+
+Color Detection:
+
+Identifies any color-related words present in the prompt.
+
+Style Detection:
+
+Finds stylistic descriptions (e.g., "sketch", "digital art", "surrealist").
+
+Time of Day Extraction:
+
+Tries to guess the time setting from words like "morning", "sunset", "night".
+
+Prompt Length:
+
+Calculates the number of words in the prompt.
+
+Result:
+
+Returns a dictionary summarizing all detected information:
+
+cultural_elements, general_category, subjects, colors, styles, time_of_day, prompt_length, and is_cultural.
 
 ✅ **Why Important?**  
 Understanding individual cultural elements helps create **more vivid, respectful, and accurate enhanced prompts**.
