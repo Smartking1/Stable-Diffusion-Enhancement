@@ -322,11 +322,11 @@ Enhanced Prompt:A dignified Yoruba man in a majestic Agbada attire, standing aga
 ![compvis2](https://github.com/user-attachments/assets/918eec3f-91c8-4ba6-a9b6-bdb56c558601)
 
 
-## Limitations
+#Limitations
 
 Some of the advanced open source text to image models require a higher GPU to run on colab. The free tier T4 GPU provided by colab is not sufficient to handle the models.
 
-## Testing the Enhanced Prompts from the AI Pipeline with advanced stable diffusion models using huggingface Inference interface yielded great result, showing that with a better text to image model the AI Pipeline will generate better results.
+**Testing the Enhanced Prompts from the AI Pipeline with advanced stable diffusion models using huggingface Inference interface yielded great result, showing that with a better text to image model the AI Pipeline will generate better results.**
 
 # 📂 Project Structure
 
