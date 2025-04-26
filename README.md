@@ -144,13 +144,53 @@ Understanding individual cultural elements helps create **more vivid, respectful
 
 ## 3️⃣ Prompt Enhancement using Llama (Cultural Richness Layer)
 
-The prompt is then passed to open source LLM **Llama model 'llama3-8b-8192'** through Groq API.
+The GroqPromptEnhancer class is designed to enhance user-provided prompts for image generation tasks.
+It uses Groq's Llama model to automatically generate richer, more vivid, and visually detailed prompts, improving image outputs while keeping the original intent intact.
 
-The system **instructs llama3-8b-8192** with a carefully designed prompt to:
-- Add **specific cultural clothing** descriptions.
-- Set an **authentic environment**.
-- Add a **mood or action**.
-- Keep it **short but visually rich**.
+**How it Works**
+Initialization (__init__):
+
+Initializes a Groq client using an API key.
+
+If the API key is not provided, it tries to fetch it from the environment variable GROQ_API_KEY.
+
+Loads predefined style templates (e.g., west_african, portrait, landscape, etc.) to help contextualize prompts for different scenarios.
+
+**Selecting a Style Template (_get_appropriate_style_template):**
+
+Based on the input context, it chooses the most suitable style template.
+
+If a cultural region is detected (e.g., West Africa or East Africa), it uses a matching cultural template.
+
+Otherwise, it falls back to a general category (like portrait, urban, etc.).
+
+If no match is found, it uses a default general style.
+
+**Enhancing the Prompt (enhance):**
+
+Analyzes the user prompt and context to build a structured enhancement request.
+
+**Sends a system message to Groq's Llama model explaining how to improve the prompt:**
+
+Add artistic details (lighting, composition, textures)
+
+Maintain original intent
+
+Keep it concise but descriptive
+
+Ensure cultural authenticity if needed
+
+**Constructs a user message combining:**
+
+The original prompt
+
+A summary of detected subjects, styles, and cultural elements.
+
+Calls Groq's Llama model to generate the enhanced prompt.
+
+If the API call fails, it falls back to simply appending detailed, high quality, 8K to the original prompt.
+
+
 
 🔵 **Example:**
 Input:
@@ -170,11 +210,52 @@ This **bridges the cultural representation gap** that many generic models suffer
 
 ## 4️⃣ Image Generation with Stable Diffusion
 
-The **enhanced culturally-rich prompt** is then passed to a **CompVis/stable-diffusion-v1-4** using Hugging Face `diffusers`.
+The StableDiffusionGenerator class is responsible for generating high-quality images from text prompts using a Stable Diffusion model.
 
-```python
-image = pipe(enhanced_prompt).images[0]
-```
+It loads a pre-trained Stable Diffusion model onto your GPU and provides a method to create images based on both positive prompts (what you want to see) and negative prompts (what you want to avoid).
+
+**How it Works**
+Initialization (__init__):
+
+Loads a Stable Diffusion model (default: "CompVis/stable-diffusion-v1-4") using DiffusionPipeline from Hugging Face.
+
+**Optimizes memory usage by:**
+
+Clearing GPU cache (torch.cuda.empty_cache()).
+
+Using bfloat16 precision for faster and more memory-efficient inference.
+
+Enabling attention slicing (if supported), which reduces memory consumption during image generation.
+
+Moves the model to the GPU ("cuda") for faster generation.
+
+Prints the loading time once the model is ready.
+
+**Generating an Image (generate_image):**
+
+**Takes in:**
+
+prompt: The enhanced positive text prompt.
+
+context: Information about cultural or stylistic elements.
+
+Optional: negative_prompt, width, and height for output size.
+
+**Negative Prompt Handling:**
+
+If no negative prompt is provided, a default negative prompt is used to filter out common image defects (e.g., "blurry", "bad anatomy", "extra limbs").
+
+If cultural context is provided (e.g., West Africa, East Africa), culture-specific negative prompts are added to avoid whitewashing or inaccuracies.
+
+If generating a portrait, it adds extra filtering for issues like "distorted face" or "multiple faces."
+
+**Calls the Stable Diffusion pipeline to generate the image with:**
+
+Guidance scale set to 7.5 (controls how strongly the model follows the prompt).
+
+30 inference steps (controls image quality and detail).
+
+Returns the generated image object.
 
 The generated image is:
 - High resolution,
