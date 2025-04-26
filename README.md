@@ -1,8 +1,4 @@
-# Stable-Diffusion-Enhancement
-
-# 📸 Culturally-Aware AI Image Generator Prototype
-
----
+# 📸 Culturally-Aware AI Image Generator Pipeline
 
 ## 🌍 Project Overview
 
@@ -11,7 +7,6 @@ Its purpose is to demonstrate the ability to **generate culturally rich images**
 
 The system accepts a **culturally specific user prompt** (e.g., "Yoruba man in agbada under a palm tree"), intelligently **analyzes and enriches** it using a **local Llama language model**, generates a **high-quality culturally accurate image**, and then **logs all details** into a **SQLite database**.
 
----
 
 ## 🎯 Core Features
 
