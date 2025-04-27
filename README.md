@@ -379,28 +379,17 @@ This notebook comes a **Gradio web interface** for generating images from text p
 
 ## 🚀 Suggestions for Future Improvements
 
-1. **Fine-tune Stable Diffusion or Other Open-Source Models with Culturally-Aware Datasets:**  
+1. Make the AI pipeline modular to accept json files with different cultural background and settings.
+
+2. **Fine-tune Stable Diffusion or Other Open-Source Models with Culturally-Aware Datasets:**  
    Enhance the system’s relevance and inclusivity by fine-tuning models on datasets that reflect diverse cultural contexts and aesthetics.
 
-2. **Integrate Advanced Models into the AI Pipeline:**  
+3. **Integrate Advanced Models into the AI Pipeline:**  
    Improve the quality and realism of the generated images by incorporating more sophisticated and state-of-the-art generative models.
 
-3. **Develop a Production-Ready AI Pipeline:**  
+4. **Develop a Production-Ready AI Pipeline:**  
    Refactor the current architecture into a modular, scalable structure, deploy the solution on a cloud platform, and expose functionality through robust APIs to enable easier integration and scalability.
 
-
-**How to Run the Project**
-1. **Run the Notebook**
-   - Open `SDX1_(2) (1).ipynb` in Colab, Jupyter Notebook, or locally.
-   - Follow the flow to generate your culturally enriched images.
-
-# 🧠 Key Takeaways
-
-This system **respects cultural depth**, **enhances representation**, and **builds a reliable foundation** for scalable cultural AI solutions.  
-By combining **local LLMs**, **diffusion models**, **database architecture**, and **professional logging**,  
-this project showcases **true end-to-end AI engineering** focused on **diversity and authenticity**.
-
----
 
 # ✅ Checklist of Features Implemented
 
