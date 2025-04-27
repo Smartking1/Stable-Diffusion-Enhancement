@@ -413,3 +413,6 @@ this project showcases **true end-to-end AI engineering** focused on **diversity
 | Modular Code Structure | ✅ |
 | User Chat Interface | ✅ |
 | Documentation | ✅ |
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1znf5OPtQQFe-G9NKdamGYVU-ChswZhz4?usp=sharing)
+
