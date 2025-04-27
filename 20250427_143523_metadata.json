@@ -1,0 +1,35 @@
+{
+  "original_prompt": "Yoruba man in Agbada under a palm tree",
+  "enhanced_prompt": "A majestic Yoruba man in a vibrant Agbada attire stands proudly beneath the towering canopy of a ancient palm tree, its weathered trunk twisted with age and its fronds rustling gently in the breeze, casting dappled shadows on the man's intricately embroidered robes, set against a warm, sun-kissed backdrop of golden West African soil.",
+  "context": {
+    "cultural_elements": {
+      "ethnic_group": [
+        "yoruba"
+      ],
+      "region": [
+        "west_africa"
+      ],
+      "clothing": [
+        "formal"
+      ],
+      "type": [
+        "agbada"
+      ]
+    },
+    "general_category": "portrait",
+    "colors": [],
+    "styles": [],
+    "subjects": [
+      "man"
+    ],
+    "time_of_day": null,
+    "prompt_length": 8,
+    "is_cultural": true
+  },
+  "timestamp": "20250427_143523",
+  "image_size": {
+    "width": 256,
+    "height": 256
+  },
+  "generation_time_seconds": 8.845317125320435
+}
