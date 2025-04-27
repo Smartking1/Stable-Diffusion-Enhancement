@@ -349,13 +349,7 @@ This demonstrates that with access to a **stronger text-to-image model**, the AI
 
 **How the Gradio Interface Works**
 
-Sure! Here's a short, professional version you can use for your README:
-
----
-
-## 📚 Overview
-
-This script provides a **Gradio web interface** for generating images from text prompts using Stable Diffusion, with optional **prompt enhancement** via Groq's LLM. It supports prompt analysis, enhanced creativity, secure API key management, and lightweight logging. The interface is modular, GPU-ready, and easy to deploy.
+This notebook comes a **Gradio web interface** for generating images from text prompts using Stable Diffusion, with optional **prompt enhancement** via Groq's LLM. It supports prompt analysis, enhanced creativity, secure API key management, and lightweight logging. The interface is modular, GPU-ready, and easy to deploy.
 
 ## 🚀 How to Run
 
@@ -376,6 +370,9 @@ This script provides a **Gradio web interface** for generating images from text 
    - (Optional) Check "Use AI Enhancement" for better results.  
    - Adjust image width and height if needed.  
    - Click "Generate Image" and view/save your results!
+  
+   ![image](https://github.com/user-attachments/assets/879033bc-61a6-4bf1-9a1f-8d30d940efcb)
+
 
 
 ## 🚀 Suggestions for Future Improvements
