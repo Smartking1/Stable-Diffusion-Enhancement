@@ -7,6 +7,8 @@ Its purpose is to demonstrate the ability to **generate culturally rich images**
 
 The system accepts a **culturally specific user prompt** (e.g., "Yoruba man in agbada under a palm tree"), intelligently **analyzes and enriches** it using a **local Llama language model**, generates a **high-quality culturally accurate image**, and then **logs all details** into a **SQLite database**.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1znf5OPtQQFe-G9NKdamGYVU-ChswZhz4?usp=sharing)
+
 
 ## 🎯 Core Features
 
