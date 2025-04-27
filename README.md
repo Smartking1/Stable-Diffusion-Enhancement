@@ -317,20 +317,6 @@ Enhanced Prompt:A dignified Yoruba man in a majestic Agbada attire, standing aga
 
 ![compvis2](https://github.com/user-attachments/assets/918eec3f-91c8-4ba6-a9b6-bdb56c558601)
 
-##  User chat Interface with Gradio
-
-**How the Gradio Interface Works**
-
-The Gradio interface provides an interactive and user-friendly web application that connects the user directly with the system’s core functionalities. It is designed around a clean layout with multiple tabs, including **Generate**, **Analyze**, and **Search**, each offering specific capabilities.
-
-- In the **Generate** tab, users can input a text prompt. The system then processes the prompt to create AI-generated images based on the input description.
-- The **Analyze** tab allows users to submit a prompt for deeper analysis. The app provides insights into the prompt's structure and can automatically enhance it to improve image generation results.
-- The **Search** tab enables users to search previously generated images based on keywords, making it easy to find and reuse past creations.
-
-Each user action (like submitting a prompt or clicking a button) triggers backend functions that handle processing, AI inference, and database retrieval. Gradio’s components — such as text boxes, buttons, and image displays — make the entire workflow seamless, requiring no technical background from the user.
-
-![image](https://github.com/user-attachments/assets/551239bf-ecaf-45f2-8992-400fc912e51c)
-
 
 
 ## Limitations
@@ -357,6 +343,39 @@ This demonstrates that with access to a **stronger text-to-image model**, the AI
 
 ![image](https://github.com/user-attachments/assets/83a3ad9e-48ec-4d97-b170-2415b3f66f61)
 
+
+
+##  User chat Interface with Gradio
+
+**How the Gradio Interface Works**
+
+Sure! Here's a short, professional version you can use for your README:
+
+---
+
+## 📚 Overview
+
+This script provides a **Gradio web interface** for generating images from text prompts using Stable Diffusion, with optional **prompt enhancement** via Groq's LLM. It supports prompt analysis, enhanced creativity, secure API key management, and lightweight logging. The interface is modular, GPU-ready, and easy to deploy.
+
+## 🚀 How to Run
+
+1. **Environment:**  
+   Make sure you are running in a **GPU environment** (e.g., Google Colab with a **T4 GPU** on the free tier is recommended).
+
+2. **Install Requirements:**  
+   Gradio and other dependencies will be automatically installed if missing.
+
+3. **Launch the Interface:**  
+   Run the notebook directly — it will start  the GPU, installs all necessary libraries and exexutes the scripts
+
+4. **Input your Groq API Key:**  
+   In the app, enter your **Groq API key** in the provided textbox and click **Set API Key** to enable prompt enhancement features.
+
+5. **Start Generating:**  
+   - Enter your prompt.  
+   - (Optional) Check "Use AI Enhancement" for better results.  
+   - Adjust image width and height if needed.  
+   - Click "Generate Image" and view/save your results!
 
 
 ## 🚀 Suggestions for Future Improvements
